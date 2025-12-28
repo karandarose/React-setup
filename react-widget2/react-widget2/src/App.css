@@ -1,0 +1,36 @@
+.app {
+  padding: 20px;
+}
+
+/* Font Sizer */
+.sized-text {
+  margin-bottom: 10px;
+}
+
+/* Text Alignment */
+.align-text.left {
+  text-align: left;
+}
+
+.align-text.center {
+  text-align: center;
+}
+
+.align-text.right {
+  text-align: right;
+}
+
+/* RGB Slider */
+.color-box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.rgb-values {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+}
