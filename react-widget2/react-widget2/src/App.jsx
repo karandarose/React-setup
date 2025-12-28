@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  /* -------- Font Sizer -------- */
   const [fontSize, setFontSize] = useState(20);
 
   const growText = () => {
@@ -13,17 +12,14 @@ function App() {
     setFontSize((prev) => Math.max(prev - 5, 0));
   };
 
-  /* -------- Text Alignment -------- */
   const [alignment, setAlignment] = useState("left");
 
-  /* -------- RGB Slider -------- */
   const [red, setRed] = useState(0);
   const [green, setGreen] = useState(0);
   const [blue, setBlue] = useState(0);
 
   return (
     <div className="app">
-      {/* Font Sizer Widget */}
       <h2 className="sized-text" style={{ fontSize: `${fontSize}px` }}>
         This is My Font Sizer Text
       </h2>
@@ -32,7 +28,6 @@ function App() {
 
       <hr />
 
-      {/* Text Alignment Widget */}
       <p className={`align-text ${alignment}`}>This text changes alignment</p>
       <button onClick={() => setAlignment("left")}>Left</button>
       <button onClick={() => setAlignment("center")}>Center</button>
@@ -40,7 +35,6 @@ function App() {
 
       <hr />
 
-      {/* RGB Slider Widget */}
       <div
         className="color-box"
         style={{
